@@ -8,11 +8,13 @@ class Dog:
 
     def celebateBirthday(self):
         self.age += 1
-        print("Happy birthday!" + " " + self.name +". You are now " + str(self.age) + " old!")
-
+        if (self.age != 1):
+            print("Happy Birthday!" + " " + self.name +" is now " + str(self.age) + " years old!")
+        else:
+            print("Happy Birthday!" + " " + self.name +" is now " + str(self.age) + " year old!")
+        
     def getInfo(self):
-        print(self.name)
-        print(str(self.age))
+        print("Dog Name: " + self.name + ", Age: " + str(self.age))
     
 doog1 = Dog("Doog", 3)
 
